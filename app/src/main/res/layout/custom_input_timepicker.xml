@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/darkSlateGrey">
+
+    <TextView
+        android:id="@+id/mTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="27sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TimePicker
+        android:background="@color/darkSlateGrey"
+        android:layout_marginTop="30dp"
+        android:id="@+id/timePicker"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <View
+        android:layout_below="@id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#939393"/>
+    <RelativeLayout
+        android:layout_below="@id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelText"
+            android:onClick="cancelPressed"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <View
+            android:layout_toRightOf="@id/cancelButton"
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:background="#939393"/>
+
+        <Button
+            android:id="@+id/okayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cancelButton"
+            android:text="@string/okayText"
+            style="?android:attr/borderlessButtonStyle" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
